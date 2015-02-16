@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Example amazon</title>
+    <style type="text/css"> 
+    .container input {
+             
+        float:left;
+        width: 700px;
+            
+    }
+    .search input{
+        margin-left:6px;
+            width:100px
+            
+    }    
+    </style>
+</head>
+<div id = "templatepdp1">
+    {{#with template1}}
+   
+    <img class = "data" src = "{{website_image}}" alt = "logo" style = "width:180px; height:70 px" align = "left">
+    <div ><a href = "{{todaysdeals}}" style="padding:10px";>    {{name}}   </a>
+    <a href = "{{giftcards}}" style="padding:10px";>    Gift Cards   </a><a href = "{{sell}}" style="padding:10px";>    Sell   </a><a href = "{{help}}" style="padding:10px";>    Help   </a></div><br><br>
+<div class = "dept">
+<div style= "margin-left :15px">{{searchbydept}}
+<select>
+  <option value="1">Home</option>
+  <option value="2">Electronics</option>
+  <option value="3">Fashion</option>
+  <option value="4">Auto</option>
+</select>
+</div>
+</div>
+<form action="action_page.php" style="margin-left:550px;">    
+    <div class = "container">
+    <br>
+        <input type="text" name="search" value="{{search}}">   
+            <div class = "search">
+            <input type = "submit" value = "search"><br>
+        </div>
+    </div>
+</form>
+    {{/with}}
+</div>

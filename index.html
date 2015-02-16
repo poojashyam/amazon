@@ -1,0 +1,87 @@
+<html>
+    <head>
+    <script type="application/javascript" src="/jquery-1.8.2.js"></script>
+    <script type="application/javascript" src="/handlebars-1.0.0.beta.6.js"></script>
+    <script type="application/javascript" src="/Class.js"></script>
+    <script type="application/javascript" src="/Base.js"></script>
+    <script type="application/javascript" src="/TemplateProvider.js"></script>
+    <script type="application/javascript" src="/Widget.js"></script>
+    <script type="application/javascript" src="/WidgetWithTemplate.js"></script>
+    <script type="application/javascript" src="/GenericWidget.js"></script>
+    <script type="application/javascript" src="/widgetpdp1.js"></script>
+    <script type="application/javascript" src="/widgetpdp2.js"></script>
+    <script type="application/javascript" src="/widgetpdp3.js"></script>
+    <script type="application/javascript" src="/widgetpdp4.js"></script>
+
+    </head>
+
+    <body>       
+    <script>
+        document.config = {
+            //templateUrl: "contact.html",
+            
+            data1:{
+                template1:
+                {
+                    website_image : "http://library.corporate-ir.net/library/17/176/176060/mediaitems/93/a.com_logo_th.jpg",
+                    todaysdeals: "http://www.amazon.com/gp/goldbox/ref=nav_cs_gb",
+                    name: "Today's Deals",
+                    giftcards:"http://www.amazon.com/gift-cards/b/ref=nav_cs_gc?ie=UTF8&node=2238192011",
+                    sell:"http://www.amazon.com/gp/seller-account/mm-product-page.html/ref=nav_cs_sell?ie=UTF8&ld=AZSOAUSCSNav",
+                    help:"http://www.amazon.com/gp/help/customer/display.html/ref=nav_cs_help?ie=UTF8&nodeId=508510",
+                    searchbydept: "Shop By Department",
+                    search:"Enter value here",
+                    sign_in: "dummy"
+                },
+            template2:
+                {
+                    qty: "Select quantity: ",
+                    
+                    a2clink:"http://localhost/folder1/scaff/added.png",
+                    turn1click:"http://localhost/folder1/scaff/added.png",
+                    add2wish:"dummy"
+                },
+            template3:
+                {
+                    product_title: "Parson's End Table",
+                    Seller : "DHP",
+                    SellerDetails: "http://www.amazon.com/s/ref=bl_sr_home-garden?ie=UTF8&field-brandtextbin=DHP&node=1055398",
+                    Seller_Link: "insertlink",
+                    Seller_Description: "Wood, Made in USA or Imported. The Perfect Little End Table for finishing touches. Super-light, Hollowcore Contruction, Durable wood grain finish is easy to clean. For College Dorms, Guest Rooms or Any Room! Easy to assemble. No need to shop, delivered to your home!",
+                    listPrice : 100,
+                    Price : 200,
+                    Savings : 100,
+                    giftWrap :true,
+                    DeliveryDate: {
+                        Oneday: "Receive on the same day",
+                        Two_day: "Receive the next business day",
+                        StandardShipping: "Standard Shipping within 3-5 business days"
+                    }
+                },
+            template4:
+                {
+                    product_image:"http://gmall.ws/upload/goods/b06719_Table01_Blue_big.jpg",
+                   
+                    option1:"Red wood finish",
+                    opt1: "http://www.ikea.com/us/en/images/products/kritter-children-s-table-red__0096636_PE236607_S4.JPG",
+                    option2:"Beach wood finish",
+                    opt2: "http://wowfactoreventdesign.com/index/wp-content/uploads/2011/03/Yellow-Side-Table.jpg",
+                    option3:"Rose wood finish",
+                    opt3: "http://www.scandinavianmod.com/images/gallery/dt046_sm2.jpg"
+                        
+                },                        
+            }
+        };
+    </script>
+       
+        <div id="contactContainer"></div>
+        <script type="application/javascript">
+            $(document).ready(function(){
+                var widget = new Clazz.GenericWidget(document.config);
+                var contactContainer = document.getElementById("contactContainer");
+                console.log(document.config);
+                widget.render(contactContainer);
+            });
+        </script>
+    </body>
+</html>

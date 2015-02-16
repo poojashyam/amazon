@@ -1,0 +1,44 @@
+<html>
+<head>
+    
+    <style type="text/css"> 
+        #template2{
+            border:1px solid green;
+            float: right;
+            padding:5px;
+            
+        }
+        #btn_s{
+            text-align: center;
+            width: 150px;
+        }
+        
+      
+    </style>
+</head>
+
+<div id = "template2">
+    
+    {{#with template2}}
+    <form>
+        <div id = "template13">
+    <div>{{qty}}
+        <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select>
+    </div><br>
+            <input type="radio" name="Turn '1' click on" value="male" >Turn '1' click ON?<br><br>
+
+            <input type=button onClick="parent.location='{{a2clink}}'" value='Add to Cart'  id = "btn_s">
+<br><br><br>
+                        <input type = "submit" value = "Add to Wish List" style = "margin-left:25px;">
+
+        </div>
+    </form>
+    {{/with}}
+</div>
+    
+    

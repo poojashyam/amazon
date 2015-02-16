@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<head>
+<style>
+   
+    
+    
+    </style>
+</head>
+<div id = "templatepdp3" style = "margin-left:550px;margin-right:300px;">
+    <br>
+    {{#with template3}}
+
+    <h2>{{product_title}}</h2>
+    <div>Seller: <a href ="#" onclick = 'javascript:window.open("{{SellerDetails}}", "_blank", "scrollbars = 1, resizeable = 1, height = 300,width = 450");' title = 'seller'>{{Seller}}</a></div>
+<div><h3> Product Description: </h3>{{Seller_Description}}</div>
+    <br>
+    <div><font size = "4"> List Price: </font>{{listPrice}}</div>
+    <div><font size = "4"> Price: </font>{{Price}}</div>
+    <div><font size = "4"> Savings: </font> {{Savings}}</div>
+    <br>
+{{#with DeliveryDate}}
+    <h3>Shipping options available for the product:</h3>
+    <form>
+        <input type="radio" name= "radioButton" value= "{{Oneday}}"   onclick="radioEvent(this.form);"/> {{Oneday}}<br/>
+        <input type="radio" name="radioButton"  value="{{Two_day}}" onclick="radioEvent(this.form);"/> {{Two_day}} <br/>
+        
+<input type="radio" name="radioButton"  value="{{StandardShipping}}" onclick="radioEvent(this.form);"/> {{StandardShipping}} <br/></form>
+    
+    
+<script type="text/javascript">
+function radioEvent(form) 
+{
+ for (var i = 0; i <= form.radioButton.length; i++) 
+ {
+    if (form.radioButton[i].checked)
+    {
+        alert("You have selected the following shipping option : " + form.radioButton[i].value + ".")
+    }
+ }
+ }
+</script>
+
+
+
+
+    {{/with}}
+
+    {{/with}}
+
+</div>
+
+  
