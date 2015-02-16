@@ -1,0 +1,57 @@
+<div>
+    <header><h1>Review your order</h1>
+        <p>By placing your order, you agree to Amazon.com's <a href="#">privacy notice</a> and <a href="#">conditions of use</a>. </p>
+    </header>
+    <div id="userDetails">
+        <div id="shippingAddress" class="customerDetailWidget"><a class="detailWindow">Shipping address  </a><a id="changeShippingAddress" class="link" href="#" >Change</a>
+            
+            <ul id='otherShippingAddress' class='change'>
+                <li>Old Address : {{oldAddress}}</li>
+                <li>New Address : {{newAddress}}</li>
+            </ul>
+            <p></p>
+            <div><div>Name : {{name}}</div>
+            <div>Address : {{address}}</div>
+            <div>Phone : {{phone}}</div></div>
+            <div><a href="#"><p>shipping to multiple addresses</p></a></div> 
+        </div>
+        <div id="paymentMethods" class="customerDetailWidget"><a class="detailWindow">Payment method  </a><a id="changePaymentMethod" class="link" href="#" >Change</a>
+            <ul id='otherPaymentMethod' class='change'>
+                <li>Old Card : {{oldCard}}</li>
+                <li>New Card : {{newCard}}</li>
+            </ul>
+            <p></p>
+            <div><div>Name : {{name}}</div>
+            <div>Address : {{address}}</div>
+            <div>Phone : {{phone}}</div></div>
+            <p></p>
+    <div><a class="detailWindow">Billing address  </a><a id="changeBillingAddress" class="link" href="#" >Change</a>
+            <ul id='otherBillingAddress' class='change'>
+                <li><a href="#" class="otherBillingAddress">Old Address : {{oldCard}}</a></li>
+                <li><a href="#" class="otherBillingAddress">New Address : {{newCard}}</a></li>
+            </ul>
+            <div id="currentBillingAddress"><div>Name : {{name}}</div>
+            <div>Address : {{address}}</div>
+                <div>Phone : {{phone}}</div></div>
+            </div>
+        </div>
+        <div id="promotionCodeText" class="customerDetailWidget"><a class="detailWindow">Gift card & promotional</a>
+        <div><input type="text" name="promotionCodeText">  <input type="button" name="promotionCodeButton" value="Apply"> </div>
+        
+        </div>
+    </div>
+</div>
+    
+
+<style>
+    .detailWindow {
+        font-size:20px;
+        font-weight:bold;
+    }
+    .customerDetailWidget {
+        float:left;
+        margin:10px;
+    }
+    
+    
+</style>
