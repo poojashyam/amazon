@@ -2,11 +2,9 @@ Clazz.addToCartWidget = Clazz.extend(  //extend will add the two together
 	Clazz.WidgetWithTemplate, {
         
         initialize : function (config) {  //first function to be called, get the parameteres passed
-           this.data = config.data;
+           this.data = config;
             this.templateUrl = "addToCartWidgetContainer.html";
         },
-        
-        
         postRender : function(){
         var customerDetailsWidget = new Clazz.customerDetailsWidget (this.data);
                 var customerDetailsWidgetContainer = document.getElementById("customerDetailsWidgetContainer");
