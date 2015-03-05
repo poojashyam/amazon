@@ -36,8 +36,14 @@
             </div>
         </div>
         <div id="promotionCodeText" class="customerDetailWidget"><a class="detailWindow">Gift card & promotional</a>
-        <div><input type="text" name="promotionCodeText">  <input id = "backButton" type="button" name="promotionCodeButton" value="Apply"> </div>
-        
+        <div><input type="text" name="promotionCodeText">  
+            <input id = "backButton" type="button" name="promotionCodeButton" value="goback" onclick = "javascript : goback()"> </div>
+        <script>
+            function goback(){
+                window.history.go(-1);
+            }
+            
+            </script>
         </div>
     </div>
 </div>
