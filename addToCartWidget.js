@@ -3,7 +3,7 @@ Clazz.addToCartWidget = Clazz.extend(  //extend will add the two together
         
         initialize : function (config) {  //first function to be called, get the parameteres passed
            this.data = config;
-            this.templateUrl = "contact.html";
+            this.templateUrl = "switchlistner.html";
         },
         postRender : function(){
         var customerDetailsWidget = new Clazz.customerDetailsWidget (this.data);

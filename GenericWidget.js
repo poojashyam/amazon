@@ -6,6 +6,7 @@ Clazz.GenericWidget = Clazz.extend(
         },
         
        postRender : function(){
+        
         var widgeta=new Clazz.widgetpdp1(this.config.data1);
         var widgetacontainer = document.getElementById("widget1container");
         widgeta.render(widgetacontainer);
