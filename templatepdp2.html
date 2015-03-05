@@ -39,7 +39,13 @@
         </div>
     </form>
     {{/with}}
-    <button id="uiSwitcher">UI Switcher</button>
+    <button id="uiSwitcher" "javascript:goForward()">UI Switcher</button>
+    <script>
+    function goForward(){
+        window.history.go(1);
+    }
+    
+    </script>
 
 </div>
     

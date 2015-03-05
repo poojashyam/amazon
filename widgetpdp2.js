@@ -19,6 +19,7 @@ Clazz.widgetpdp2 = Clazz.extend(
             var self = this;
             buttonSwitcher.onclick = function(){
                 switchListener.switchUI(self.data);
+                
             }
             
         }

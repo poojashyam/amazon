@@ -41,6 +41,12 @@
         <script>
             function goback(){
                 window.history.go(-1);
+                var widget = new Clazz.GenericWidget(document.config);
+                var contactContainer = document.getElementById("contactContainer");
+                console.log(document.config);
+                widget.render(contactContainer);
+            
+                return false;
             }
             
             </script>
