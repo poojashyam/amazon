@@ -1,12 +1,13 @@
 Clazz.GenericWidget = Clazz.extend(
     Clazz.WidgetWithTemplate,{
+        
         initialize : function(config){
             this.config = config;
             this.templateUrl = "contact.html";
         },
         
        postRender : function(){
-        
+        window.location.hash = "page1";
         var widgeta=new Clazz.widgetpdp1(this.config.data1);
         var widgetacontainer = document.getElementById("widget1container");
         widgeta.render(widgetacontainer);

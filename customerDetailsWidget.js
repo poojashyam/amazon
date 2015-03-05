@@ -6,6 +6,7 @@ Clazz.customerDetailsWidget = Clazz.extend(
             this.data = data;
         },
         
+        
         apps1 : function(){
             $('.change').hide();
             $('#changeShippingAddress').click(function(){

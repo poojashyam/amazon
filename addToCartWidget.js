@@ -6,6 +6,7 @@ Clazz.addToCartWidget = Clazz.extend(  //extend will add the two together
             this.templateUrl = "switchlistner.html";
         },
         postRender : function(){
+
         var customerDetailsWidget = new Clazz.customerDetailsWidget (this.data);
                 var customerDetailsWidgetContainer = document.getElementById("customerDetailsWidgetContainer");
                 customerDetailsWidget.render(customerDetailsWidgetContainer);

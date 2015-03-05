@@ -12,6 +12,7 @@ Clazz.widgetpdp2 = Clazz.extend(
             this.data = config;
             
         },
+        
         bindUI : function(){
             var buttonSwitcher = document.getElementById("uiSwitcher");
             var switchListener = new Clazz.UISwitchListener(this.config);

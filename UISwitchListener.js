@@ -1,13 +1,12 @@
 Clazz.UISwitchListener = Clazz.extend(Clazz.Base,{
 
     switchUI :function(config){
-        $('#product').empty();
+                $('#product').empty();
+        window.location.hash = "page2";
         var widget = new Clazz.addToCartWidget(config);
         var contactContainer = document.getElementById("addToCartWidgetContainer");
         widget.render(contactContainer);
-        
     }
-   
 });
 
 
