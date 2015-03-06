@@ -7,7 +7,7 @@ Clazz.GenericWidget = Clazz.extend(
         },
         
        postRender : function(){
-        window.location.hash = "page1";
+        window.location.hash = "PDPpage";
         var widgeta=new Clazz.widgetpdp1(this.config.data1);
         var widgetacontainer = document.getElementById("widget1container");
         widgeta.render(widgetacontainer);
@@ -20,7 +20,7 @@ Clazz.GenericWidget = Clazz.extend(
         var widgetccontainer = document.getElementById("widget3container");
         widgetc.render(widgetccontainer);
            
-           var widgetd = new Clazz.widgetpdp4(this.config.data1);
+        var widgetd = new Clazz.widgetpdp4(this.config.data1);
         var widgetdcontainer = document.getElementById("widget4container");
         widgetd.render(widgetdcontainer);
 
